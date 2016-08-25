@@ -52,7 +52,7 @@ public class DatePickerFragment extends DialogFragment {
 					int monthOfYear, int dayOfMonth) {
 				mDate = new GregorianCalendar(year, monthOfYear, dayOfMonth)
 						.getTime();
-				// 保存数据，防止设备选择数据丢失
+				// 保存数据，防止设备旋转时数据丢失
 				getArguments().putSerializable(EXTRA_DATE, mDate);
 			}
 		});
